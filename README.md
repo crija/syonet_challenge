@@ -9,3 +9,8 @@ Challenge proposed by the company Syonet
 - idade: Idade do carro;
 - valor: Valor do carro;
 - acoes: Quantidade de ações que o consumidor tomou para compra ou venda de carros.
+
+#### Biblioteca para ler a planilha:
+- Pandas
+
+Atenção: O arquivo deve estar na mesma pasta do código.
