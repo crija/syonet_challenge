@@ -1,2 +1,2 @@
 # syonet_challenge
-Challenge proposed by the company Syonete
+Challenge proposed by the company Syonet
