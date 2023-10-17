@@ -5,5 +5,28 @@ import pandas as pd
 df = pd.read_csv("./data.csv", sep = ';').head()
 
 # Escolhendo três colunas do arquivo.
-print(df[['idade', 'acoes', 'valor']])
+df = df[['idade', 'acoes', 'valor']]
 
+print(df)
+
+#print(df.loc[df['idade'] == 31])
+
+'''for linha in df.items():
+    print(linha)'''
+    
+cont = 0
+for i, j in df.iterrows():
+    if j['idade'] >= 30:
+        cont =+ 1
+        print(f"{j['idade']} = {cont}")
+    elif j['idade'] < 30:
+        cont =- 1
+        print(f"{j['idade']} = {cont}")
+        print('---------')
+
+
+
+        
+
+
+    
