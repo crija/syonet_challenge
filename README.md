@@ -11,6 +11,6 @@ Challenge proposed by the company Syonet
 - acoes: Quantidade de ações que o consumidor tomou para compra ou venda de carros.
 
 #### Biblioteca para ler a planilha:
-- Pandas
+- Pandas: Bibliotéca mais indicada para trabalhar com tratemanto de dados.
 
 Atenção: O arquivo deve estar na mesma pasta do código.
