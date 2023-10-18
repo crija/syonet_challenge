@@ -28,10 +28,19 @@ class AnalisadorAcoes:
         else:
             return -1
         
+class AnalisadorValor:
+    def analisar(dados):
+        if dados['valor'] < 100000.0:
+            return 1
+        else:
+            return -1
+        
 for i, dados in df.iterrows():
     ponto1 = AnalisadorIdade.analisar(dados)
     ponto2 = AnalisadorAcoes.analisar(dados)
-    print(ponto1 + ponto2)
+    ponto3 = AnalisadorValor.analisar(dados)
+    print(f'Total de pontos da linha {i}: {ponto1 + ponto2 + ponto3}')
+    
 
 
 
