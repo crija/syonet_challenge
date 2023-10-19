@@ -11,6 +11,7 @@ Challenge proposed by the company Syonet
 - acoes: Quantidade de ações que o consumidor tomou para compra ou venda de carros.
 
 #### Biblioteca para ler a planilha:
-- Pandas: Bibliotéca mais indicada para trabalhar com tratemanto de dados.
+- Pandas: Bibliotéca mais indicada para trabalhar com tratamento de dados.
+- Psycopg2: Para o Python conseguir se comunicar com o Banco de Dados.
 
 Atenção: O arquivo deve estar na mesma pasta do código.
