@@ -9,9 +9,6 @@ from analisadores.analisador_valor import AnalisadorValor
 # Lendo o arquivo csv e passando segundo parâmentro para padronizar com ';'.
 df = pd.read_csv("./data.csv", sep = ';').head() # Usando a função 'head' para usar as 5 primeiras linhas do arquivo no teste.
 
-# Escolhendo três colunas do arquivo para testes.
-df = df[['idade', 'acoes', 'valor']]
-
 # Mostrar as colunas e valores.
 print(df)
 
