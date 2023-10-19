@@ -4,6 +4,9 @@ Challenge proposed by the company Syonet
 ### Objetivo:
  Criar um projeto em python para classificação de clientes com MAIS probabilidade de recompra de veículos.
 
+#### Material Fornecido:
+- [Arquivo CSV](data.csv)
+
 #### Teste Manual:
 Realizar testes manuais para garantir a qualidade das informações que serão armazenadas. Para isso usarei apenas três colunas e as 5 primeiras linhas.
 - idade: Idade do carro;
