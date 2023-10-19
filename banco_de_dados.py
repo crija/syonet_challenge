@@ -18,6 +18,4 @@ class BancoDeDados:
     def executar_query(self, query):
         cursor = self.conexao.cursor()
         cursor.execute(query)
-
-        # Retorna o resultado da query.
-        return cursor.fetchall()
+        
