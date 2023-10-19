@@ -5,7 +5,7 @@ Challenge proposed by the company Syonet
  Criar um projeto em python para classificação de clientes com MAIS probabilidade de recompra de veículos.
 
 #### Teste Manual:
-Realizar testes manuais para garantir a qualidade das informações fornecidas. Para isso usarei apenas três colunas e as 5 primeiras linhas.
+Realizar testes manuais para garantir a qualidade das informações que serão armazenadas. Para isso usarei apenas três colunas e as 5 primeiras linhas.
 - idade: Idade do carro;
 - valor: Valor do carro;
 - acoes: Quantidade de ações que o consumidor tomou para compra ou venda de carros.
