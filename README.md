@@ -22,6 +22,8 @@ Atenção: O arquivo deve estar na mesma pasta do código.
 #### Banco de Dados:
 - Postgres: Para armazenar os dados dos clientes.
 
+#### Organização Código:
+- Criação do aquivo principal e pasta contendo os aquivos analisadores. Os analisadores foram criados com o intuito de analisar dados das colunas e adicionar pontos, onde serão somados e usados na probabilidade final.
 
 
 
