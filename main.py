@@ -13,6 +13,7 @@ db = BancoDeDados()
 # Criando tabela analises_recompra.
 db.executar_query("""
 CREATE TABLE IF NOT EXISTS analises_recompra(
+    id SERIAL PRIMARY KEY,
     numero_linha INT,
     pontuacao INT,
     nome_arquivo VARCHAR,
@@ -40,4 +41,16 @@ for i, dados in df.iterrows(): # Estrutura de repetição, onde vai analisar cad
     numero_linha = i + 2
 
     # Passando dados para o Banco de Dados.
-    db.executar_query(f"INSERT INTO analises_recompra (numero_linha, pontuacao, nome_arquivo) VALUES ({numero_linha}, {pontuacao_total}, '{NOME_ARQUIVO}') ON CONFLICT DO NOTHING")
+    db.executar_query(f"""
+    INSERT INTO analises_recompra (
+        numero_linha,
+        pontuacao,
+        nome_arquivo,
+        dados
+    ) VALUES (
+        {numero_linha},
+        {pontuacao_total},
+        '{NOME_ARQUIVO}',
+        '{dados.to_json()}'
+    ) ON CONFLICT DO NOTHING
+    """)
