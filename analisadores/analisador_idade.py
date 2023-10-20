@@ -1,9 +1,10 @@
 class AnalisadorIdade:
     def analisar(dados):
-        if dados['idade'] < 30:
-            return 5
-        elif dados['idade'] > 30 and dados['idade'] <= 50:
-            return 15
+        if dados['idade'] < 25:
+            return 10
+        elif dados['idade'] > 25 and dados['idade'] <= 40:
+            return 20
+        elif dados['idade'] > 40 and dados['idade'] <= 65:
+            return 30
         else:
-            return 25
-        
+            return 40
