@@ -10,6 +10,8 @@ from banco_de_dados import BancoDeDados
 
 # Criando conexão com o Banco de Dados.
 db = BancoDeDados()
+
+db.executar_query('drop table analises_recompra')
 # Criando tabela analises_recompra.
 db.executar_query("""
 CREATE TABLE IF NOT EXISTS analises_recompra(
@@ -28,7 +30,7 @@ ON analises_recompra(numero_linha, nome_arquivo);
 
 NOME_ARQUIVO = 'data.csv'
 # Lendo o arquivo csv e passando segundo parâmentro para padronizar com ';'.
-df = pd.read_csv(f"./{NOME_ARQUIVO}", sep = ';').head() # Usando a função 'head' para usar as 5 primeiras linhas do arquivo no teste.
+df = pd.read_csv(f"./{NOME_ARQUIVO}", sep = ';')
 
 # Programa principal ao qual os três analisadores atuam.
 for i, dados in df.iterrows(): # Estrutura de repetição, onde vai analisar cada linha do arquivo csv.
