@@ -25,5 +25,35 @@ Atenção: O arquivo deve estar na mesma pasta do código.
 #### Organização Código:
 - Criação do aquivo principal e pasta contendo os aquivos analisadores. Os analisadores foram criados com o intuito de analisar dados das colunas e adicionar pontos, onde serão somados e usados na probabilidade final.
 
+#### Tempo de Pocessamento:
+- Tempo de processamento fazendo uma inserção por linha do arquivo no banco de dados:
+```sh
+$ time python main.py
+python main.py  44,16s user 4,49s system 31% cpu 2:33,69 total
+```
 
+#### Comandos Postgres:
+Seleciona o número de linhas contidas no banco de dados.
+```sql
+$ select count(*) from analises_recompra;
+```
 
+Seleciona as colunas 'id', 'numero_linha', 'pontuacao' e nome_arquivo.
+```sql
+$ select id, numero_linha, pontuacao, nome_arquivo from analises_recompra;
+```
+
+Seleciona as colunas 'id', 'numero_linha', 'pontuacao' e 'nome_arquivo' que tenham a pontuação maior de 50.
+```sql
+$ select id, numero_linha, pontuacao, nome_arquivo from analises_recompra where pontuacao > 50;
+```
+
+Seleciona as colunas 'id', 'pontuacao' de forma ordenada, menor a maior pontuação.
+```sql
+$ select id, pontuacao, from analises_recompra order by pontuacao;
+```
+
+Seleciona a maior e menor pontuação.
+```sql
+$ select max(pontuacao), min(pontuacao) from analises_recompra;
+```
